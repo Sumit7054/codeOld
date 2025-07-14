@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [1,2,3,4,5];
+        console.log(a.length);
+        let lastNumber = a.pop();
+        console.log(lastNumber);
+        let shiftedNumber = a.shift();
+        console.log(shiftedNumber);
+        let newList = [7,8,9,10];
+        let extenedList = a.concat(newList);
+        console.log(extenedList);
+        // extenedList = extenedList.unshift(0);
+        // console.log(extenedList);
+
+        //extenedList.forEach((number, index) => {
+        //    console.log(`The number at ${index} is ${number}`);
+        //});
+
+        //extenedList.forEach((number, index) => {
+        //    console.log(`Element at index ${index} is ${number}`);
+        //   });   
+        
+        extenedList.map((num)=> num**num);
+        console.log(extenedList)
+
+        oddList = extenedList.filter((number)=> number%2 == 1);
+        console.log(oddList);
+
+        let gt5 = extenedList.find((number)=> number > 5);
+        console.log(gt5);
+
+        
+
+        function car(model, year, company){
+            this.model = model;
+            this.year = year;
+            this.company =  company;
+        }
+
+        car.prototype.honk = function() {
+            console.log(`Honking : \n ${this.model} \n ${this.company} \n ${this.year}`);
+        };
+
+        let car1 = new car("Tesla", 2023, "Tesla Motors");
+        car1.honk();
+
+    </script>
+</body>
+</html>

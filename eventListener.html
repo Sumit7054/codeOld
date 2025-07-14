@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dropdown List</h1>
+    <select name="" id="ddl">
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JAVASCRIPT">JAVASCRIPT</option>
+    <option value="JAVA Core">JAVA Core</option>
+    <option value="JAVA ADVANCED">JAVA ADVANCED</option>
+    </select>
+    
+    <button onclick="deleteItem()">Delete Items</button>
+
+    <script>
+        function deleteItem() {
+        let idelete = prompt("Give me the name of item to be removed!");
+
+
+        let item = document.getElementById("ddl");
+        let childrenlist = item.getElementsByTagName("option");
+        if(childrenlist.length ==0)
+        {
+            alert("There is nothing to delete!");
+            return 
+        }
+
+        var removed = false;
+        console.log(childrenlist);
+        console.log(childrenlist.length);
+        console.log(childrenlist[childrenlist.length-1]);
+
+        for(let j=0; j < childrenlist.length; j++){
+            if(childrenlist[j].value.toLowerCase() == idelete.toLowerCase())
+            {
+                console.log(`Removed the required element: ${childrenlist[j].value} on position ${j}.`);
+                item.remove(childrenlist[j]);
+                removed = true;
+            }
+
+        }
+
+        if(removed == true)
+        {
+            console.log(`The item  ${idelete} was removed successfully`);
+        }
+        else{
+            console.log(`The item  ${idelete} was not found!`);
+        }
+
+
+        }
+
+    </script>
+</body>
+</html>

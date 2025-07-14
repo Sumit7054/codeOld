@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>We will create an unordered list and modify using JS DOM.</h1>
+    <h1>Lets do it!</h1>
+
+    <ul id="ul1">
+        <li>
+            Frontend development
+        </li>
+        <li>
+            Backend development
+        </li>
+        <li>
+            Mobile App development
+        </li>
+
+        <li>
+            Agile and Devops technologies
+        </li>
+
+    </ul>
+
+    <script>
+        let l1 = document.getElementById("ul1");
+        console.log(l1);
+        elems =l1.getElementsByTagName("li");
+        console.log(elems);
+        for(let k=0; k< elems.length; k++)
+        {
+            if(k==0){elems[k].innerHTML = "HTML, CSS, JAVASCRIPT, REACT, ANGULAR";}
+            else if(k==1){elems[k].innerHTML = "JAVA, PYTHON, C#, JAVASCRIPT";}
+            else if(k==2){elems[k].innerHTML = "XAMARIN, JAVA";}
+            else {elems[k].innerHTML = "Agile, Scrum, Devops, MLoPS, GIT/GITHUB";}
+
+            
+        }
+    </script>
+</body>
+</html>

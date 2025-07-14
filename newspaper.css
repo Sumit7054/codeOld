@@ -1,0 +1,69 @@
+#div1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 50px;
+}
+
+#div2 {
+
+    font-family: Arial;
+    font-size: small;
+    text-align: end;
+}
+
+#div3
+{
+
+    font-family: Arial;
+    font-size: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-weight: bold;
+}
+
+#div31 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#div4
+{
+    width: 250px;
+    height: 100px;
+    float: left;
+}
+
+#div5 {
+    width: 500px;
+    height: 300px;
+    float:left
+}
+
+#div6
+{
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    float: left;
+}
+
+#div7
+{
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    float: left;
+    margin-top: 100px;
+}
+
+#div8
+{
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    float: left;
+    margin-top:100px;
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="ul1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>React</li>
+    </ul>
+    
+    <button id="btn1" onclick="addlistelement()">Click me to add list element!</button>
+
+    <script>
+        let ul1= document.getElementById("ul1");
+        function addlistelement() {
+            let newel = document.createElement('li');
+            newel.innerHTML = "Angular";
+
+            newel.style.color = "red";
+
+            ul1.appendChild(newel);
+            alert("New element to unordered list is to be appended!");
+        }
+    </script>
+
+</body>
+</html>
